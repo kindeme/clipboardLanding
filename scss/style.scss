@@ -1,0 +1,21 @@
+*,
+::after,
+::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+$primary-cyan: hsl(171, 66%, 44%);
+$primary-lightBlue: hsl(201, 11%, 69%);
+$secondary-darkBlue: hls(210, 10%, 33%);
+$secondary-blue: hsl(201, 11%, 66%);
+
+body {
+	font-size: 18px;
+	background: url(../images/bg-header-mobile.png) top/cover no-repeat;
+}
+.header{
+  margin: 2rem auto;
+  text-align: center;
+  
+}
