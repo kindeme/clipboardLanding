@@ -1,3 +1,4 @@
+// global style
 *,
 ::after,
 ::before {
@@ -5,17 +6,68 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
 $primary-cyan: hsl(171, 66%, 44%);
 $primary-lightBlue: hsl(201, 11%, 69%);
-$secondary-darkBlue: hls(210, 10%, 33%);
+$secondary-darkBlue: hsl(210, 10%, 33%);
 $secondary-blue: hsl(201, 11%, 66%);
+$ff-title: "Bai Jamjuree", sans-serif;
+$ff-bodyWeight: 400;
+$ff-titleWeight: 600;
+$body-color: lighten(black, 40%);
+$margin-b: 1.3rem;
+@mixin bigTitle($fontSize) {
+	font-family: $ff-title;
+	font-weight: $ff-titleWeight;
+	font-size: $fontSize;
+}
+a {
+	text-decoration: none;
+}
+.btn {
+	color: white;
+	font-size: 1.1rem;
+	padding: 0.8rem 1.7rem;
+	width: 4rem;
+	border-radius: 2rem;
+}
+.btn--green {
+	background: $primary-cyan;
+	&active {
+		background: lightten($primary-cyan, 30%);
+	}
+}
+.btn--blue {
+	background: rgba(60, 59, 141, 0.9);
+	&active {
+		background: rgba(60, 59, 141, 0.7);
+	}
+}
 
 body {
 	font-size: 18px;
 	background: url(../images/bg-header-mobile.png) top/cover no-repeat;
+	font-weight: $ff-bodyWeight;
 }
-.header{
-  margin: 2rem auto;
-  text-align: center;
-  
+
+// header style
+.header {
+	margin: 2rem auto;
+	text-align: center;
+	&__logo {
+		width: 4rem;
+		height: 4rem;
+		margin-bottom: 1.2rem;
+	}
+	&__title {
+		@include bigTitle(1.8rem);
+		margin-bottom: 0.8rem;
+	}
+	&__description {
+		color: $body-color;
+		margin-bottom: $margin-b;
+	}
+	// &__btns {
+	// 	display: block;
+	// }
 }
