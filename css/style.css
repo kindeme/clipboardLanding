@@ -145,6 +145,54 @@ body {
   padding-bottom: .7rem;
 }
 
+.workflow {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.workflow__header__title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1.1rem;
+}
+
+.workflow__header__description {
+  color: #666666;
+  margin-bottom: 1.3rem;
+}
+
+.workflow__text {
+  padding-top: .5rem;
+  margin-bottom: 5rem;
+}
+
+.workflow__text__container {
+  margin-top: 3rem;
+}
+
+.workflow__text__container__img {
+  margin-bottom: 1rem;
+}
+
+.workflow__text__container__title {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.workflow__text__container__description {
+  color: #666666;
+  margin-bottom: 1.3rem;
+}
+
+.workflow__sponsors__img {
+  display: block;
+  margin: 2rem auto;
+}
+
 @media screen and (min-width: 500px) {
   .btns {
     display: -webkit-box;
