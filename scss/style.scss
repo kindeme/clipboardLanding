@@ -16,6 +16,10 @@ $ff-bodyWeight: 400;
 $ff-titleWeight: 600;
 $body-color: lighten(black, 40%);
 $margin-b: 1.3rem;
+@mixin description{
+	color: $body-color;
+	margin-bottom: $margin-b;
+}
 @mixin bigTitle($fontSize) {
 	font-family: $ff-title;
 	font-weight: $ff-titleWeight;
@@ -81,18 +85,46 @@ body {
 	}
 	&__title {
 		@include bigTitle(1.6rem);
-		margin-bottom: 0.8rem;
+		margin-bottom: 1rem;
 	}
 	&__description {
-		color: $body-color;
-		margin-bottom: $margin-b;
+		@include description();
 	}
 	&__btns {
 		display: block;
 	}
 }
-
 // Track
+.track{
+	text-align: center;
+	margin-bottom: 4rem;
+	&__header{
+		&__title{
+	@include bigTitle(1.6rem);
+		margin-bottom: 1rem;
+		}
+		&__description {
+	@include description();
+	}
+	}
+ &__articles{
+	margin-top: 2rem;
+	&__content{
+		&__container{
+			margin-top: 3rem;
+			&__title{
+				text-transform: capitalize;
+				margin-bottom: 1rem;
+				@include bigTitle(1.3rem);
+			}
+			&__description{
+				@include description();
+			}
+		}
+	}
+ }
+}
+
 // End Track
 
 // media curry

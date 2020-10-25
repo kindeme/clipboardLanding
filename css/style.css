@@ -76,7 +76,7 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .header__description {
@@ -86,6 +86,44 @@ body {
 
 .header__btns {
   display: block;
+}
+
+.track {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.track__header__title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.track__header__description {
+  color: #666666;
+  margin-bottom: 1.3rem;
+}
+
+.track__articles {
+  margin-top: 2rem;
+}
+
+.track__articles__content__container {
+  margin-top: 3rem;
+}
+
+.track__articles__content__container__title {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.track__articles__content__container__description {
+  color: #666666;
+  margin-bottom: 1.3rem;
 }
 
 @media screen and (min-width: 500px) {
