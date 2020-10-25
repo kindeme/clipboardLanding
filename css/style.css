@@ -9,7 +9,21 @@
 
 a {
   text-decoration: none;
+}
+
+.btns {
+  display: block;
+  margin-top: 2rem;
+}
+
+.btns li {
+  margin-bottom: 3rem;
+}
+
+.btns li a {
   color: white;
+  padding: .7rem 1.7rem;
+  border-radius: 2rem;
 }
 
 .btn--green {
@@ -28,7 +42,8 @@ a {
   background: rgba(60, 59, 141, 0.6);
 }
 
-img:not(.header__logo):not(.footer-icon) {
+.track__articles__image img,
+.clipboard__image img {
   display: block;
   width: 100%;
 }
