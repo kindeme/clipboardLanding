@@ -90,19 +90,20 @@ body {
 
 .track {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .track__header__title {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .track__header__description {
   color: #666666;
   margin-bottom: 1.3rem;
+  padding-bottom: .7rem;
 }
 
 .track__articles {
@@ -124,6 +125,24 @@ body {
 .track__articles__content__container__description {
   color: #666666;
   margin-bottom: 1.3rem;
+}
+
+.clipboard {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.clipboard__header__title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1.1rem;
+}
+
+.clipboard__header__description {
+  color: #666666;
+  margin-bottom: 1.3rem;
+  padding-bottom: .7rem;
 }
 
 @media screen and (min-width: 500px) {

@@ -97,14 +97,15 @@ body {
 // Track
 .track{
 	text-align: center;
-	margin-bottom: 4rem;
+	margin-bottom: 5rem;
 	&__header{
 		&__title{
 	@include bigTitle(1.6rem);
-		margin-bottom: 1rem;
+		margin-bottom: 1.1rem;
 		}
 		&__description {
 	@include description();
+		padding-bottom: .7rem;
 	}
 	}
  &__articles{
@@ -119,14 +120,30 @@ body {
 			}
 			&__description{
 				@include description();
+				
 			}
 		}
 	}
  }
 }
-
 // End Track
 
+// clipboard
+.clipboard{
+	text-align: center;
+	margin-bottom: 5rem;
+	&__header{
+		&__title{
+	@include bigTitle(1.6rem);
+		margin-bottom: 1.1rem;
+		}
+		&__description {
+	@include description();
+		padding-bottom: .7rem;
+	}
+	}
+
+}
 // media curry
 @media screen and (min-width: 500px) {
 	.btns {
