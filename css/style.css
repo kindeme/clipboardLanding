@@ -9,36 +9,40 @@
 
 a {
   text-decoration: none;
-}
-
-.btn {
   color: white;
-  font-size: 1.1rem;
-  padding: 0.8rem 1.7rem;
-  width: 4rem;
-  border-radius: 2rem;
 }
 
 .btn--green {
   background: #26baa4;
 }
 
-.btn--greenactive {
-  background: lightten(#26baa4, 30%);
+.btn--green:active {
+  background: #7ce4d4;
 }
 
 .btn--blue {
   background: rgba(60, 59, 141, 0.9);
 }
 
-.btn--blueactive {
-  background: rgba(60, 59, 141, 0.7);
+.btn--blue:active {
+  background: rgba(60, 59, 141, 0.6);
+}
+
+img:not(.header__logo):not(.footer-icon) {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
   font-size: 18px;
   background: url(../images/bg-header-mobile.png) top/cover no-repeat;
   font-weight: 400;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .header {
@@ -62,4 +66,8 @@ body {
 .header__description {
   color: #666666;
   margin-bottom: 1.3rem;
+}
+
+.header__btns {
+  display: block;
 }
