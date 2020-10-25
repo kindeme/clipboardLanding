@@ -49,6 +49,7 @@ ul {
 	color: white;
 	padding: 0.7rem 1.7rem;
 	border-radius: 2rem;
+	text-transform: capitalize;
 }
 .btn--green {
 	background: $primary-cyan;
@@ -184,8 +185,21 @@ body {
 		}
 	}
 }
-
 // End worflow
+// osystem
+.osystem{
+	text-align: center;
+	margin-bottom: 5rem;
+		&__title{
+	@include bigTitle(1.6rem);
+		margin-bottom: 1.1rem;
+		}
+		&__description {
+	@include description();
+		padding-bottom: .7rem;
+	}
+	
+}
 // media curry
 @media screen and (min-width: 500px) {
 	.btns {
@@ -193,7 +207,7 @@ body {
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-	.btn:nth-child(1) {
+	.btn {
 		margin-right: 2rem;
 	}
 }
