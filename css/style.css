@@ -11,9 +11,19 @@ a {
   text-decoration: none;
 }
 
+.track__articles__image img,
+.clipboard__image img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .btns {
   display: block;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .btns li {
@@ -22,7 +32,7 @@ a {
 
 .btns li a {
   color: white;
-  padding: .7rem 1.7rem;
+  padding: 0.7rem 1.7rem;
   border-radius: 2rem;
 }
 
@@ -42,16 +52,6 @@ a {
   background: rgba(60, 59, 141, 0.6);
 }
 
-.track__articles__image img,
-.clipboard__image img {
-  display: block;
-  width: 100%;
-}
-
-ul {
-  list-style-type: none;
-}
-
 body {
   font-size: 18px;
   background: url(../images/bg-header-mobile.png) top/cover no-repeat;
@@ -63,6 +63,7 @@ body {
 .header {
   margin: 2rem auto;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .header__logo {
@@ -74,7 +75,7 @@ body {
 .header__title {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 0.8rem;
 }
 
@@ -85,4 +86,20 @@ body {
 
 .header__btns {
   display: block;
+}
+
+@media screen and (min-width: 500px) {
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .btn:nth-child(1) {
+    margin-right: 2rem;
+  }
 }

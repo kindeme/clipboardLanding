@@ -24,17 +24,26 @@ $margin-b: 1.3rem;
 a {
 	text-decoration: none;
 }
+.track__articles__image img,
+.clipboard__image img {
+	display: block;
+	width: 100%;
+}
+ul {
+	list-style-type: none;
+}
+
 // button styling
 .btns {
 	display: block;
-	margin-top: 2rem;
+	margin-top: 2.5rem;
 }
 .btns li {
 	margin-bottom: 3rem;
 }
-.btns li a{
+.btns li a {
 	color: white;
-	padding: .7rem 1.7rem;
+	padding: 0.7rem 1.7rem;
 	border-radius: 2rem;
 }
 .btn--green {
@@ -51,14 +60,6 @@ a {
 }
 
 // End button styling
-.track__articles__image img,
-.clipboard__image img {
-	display: block;
-	width: 100%;
-}
-ul {
-	list-style-type: none;
-}
 
 body {
 	font-size: 18px;
@@ -72,13 +73,14 @@ body {
 .header {
 	margin: 2rem auto;
 	text-align: center;
+	margin-bottom: 5rem;
 	&__logo {
 		width: 4rem;
 		height: 4rem;
 		margin-bottom: 1.2rem;
 	}
 	&__title {
-		@include bigTitle(1.8rem);
+		@include bigTitle(1.6rem);
 		margin-bottom: 0.8rem;
 	}
 	&__description {
@@ -87,5 +89,20 @@ body {
 	}
 	&__btns {
 		display: block;
+	}
+}
+
+// Track
+// End Track
+
+// media curry
+@media screen and (min-width: 500px) {
+	.btns {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.btn:nth-child(1) {
+		margin-right: 2rem;
 	}
 }
