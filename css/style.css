@@ -215,7 +215,7 @@ body {
   padding-bottom: 0.7rem;
 }
 
-.footer__links li {
+.footer__wrap__links li {
   margin-bottom: 1.5rem;
 }
 
@@ -226,19 +226,19 @@ body {
   text-align: center;
 }
 
-.footer__logo {
+.footer__wrap__logo {
   width: 4rem;
   height: 4rem;
   margin-bottom: 2rem;
 }
 
-.footer__links__link {
+.footer__wrap__links__link {
   color: black;
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
 }
 
-.footer__icons {
+.footer__wrap__icons {
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +248,7 @@ body {
           justify-content: center;
 }
 
-.footer__icons__icon {
+.footer__wrap__icons__icon {
   margin-right: 1rem;
 }
 
@@ -285,6 +285,9 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-right: 5rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .track__articles__content {
     text-align: left;
@@ -303,7 +306,7 @@ body {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 3rem;
-    max-width: 70rem;
+    max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -316,5 +319,28 @@ body {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__wrap__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__wrap__links__link {
+    margin-right: 2rem;
   }
 }

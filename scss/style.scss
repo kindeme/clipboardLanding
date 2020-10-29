@@ -199,7 +199,7 @@ body {
 	}
 }
 // gooter styling
-.footer__links li {
+.footer__wrap__links li {
 	margin-bottom: 1.5rem;
 }
 .footer {
@@ -207,24 +207,26 @@ body {
 	padding-bottom: 2rem;
 	background: $primary-lightBlue;
 	text-align: center;
-	&__logo {
-		width: 4rem;
-		height: 4rem;
-		margin-bottom: 2rem;
-	}
-	&__links {
-		&__link {
-			color: black;
-			font-size: 1.3rem;
-			letter-spacing: 0.1rem;
+	&__wrap {
+		&__logo {
+			width: 4rem;
+			height: 4rem;
+			margin-bottom: 2rem;
 		}
-	}
-	&__icons {
-		padding-top: 1rem;
-		display: flex;
-		justify-content: center;
-		&__icon {
-			margin-right: 1rem;
+		&__links {
+			&__link {
+				color: black;
+				font-size: 1.3rem;
+				letter-spacing: 0.1rem;
+			}
+		}
+		&__icons {
+			padding-top: 1rem;
+			display: flex;
+			justify-content: center;
+			&__icon {
+				margin-right: 1rem;
+			}
 		}
 	}
 }
@@ -254,6 +256,7 @@ body {
 			&__image {
 				justify-content: flex-start;
 				margin-right: 5rem;
+				align-self: center;
 			}
 			&__content {
 				text-align: left;
@@ -275,7 +278,7 @@ body {
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 			grid-gap: 3rem;
-			max-width: 70rem;
+			max-width: 80rem;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -286,6 +289,23 @@ body {
 			max-width: 80rem;
 			margin-left: auto;
 			margin-right: auto;
+		}
+	}
+	.footer {
+		&__wrap {
+			display: flex;
+			justify-content: space-between;
+			max-width: 80rem;
+			margin-left: auto;
+			margin-right: auto;
+			&__links {
+				display: flex;
+				align-self: center;
+				flex-wrap: wrap;
+				&__link {
+					margin-right: 2rem;
+				}
+			}
 		}
 	}
 }
