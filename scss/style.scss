@@ -230,7 +230,7 @@ body {
 }
 // media curry
 @media screen and (min-width: 765px) {
-p:not(.track__articles__content__container__description) {
+	p:not(.track__articles__content__container__description) {
 		max-width: 50rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -247,12 +247,10 @@ p:not(.track__articles__content__container__description) {
 	.btn {
 		margin-right: 2rem;
 	}
-	
+
 	.track {
 		&__articles {
 			display: flex;
-			// justify-content: space-between;
-			// flex-wrap: wrap;
 			&__image {
 				justify-content: flex-start;
 				margin-right: 5rem;
@@ -265,6 +263,29 @@ p:not(.track__articles__content__container__description) {
 					}
 				}
 			}
+		}
+	}
+	.clipboard {
+		max-width: 70rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.workflow {
+		&__text {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			grid-gap: 3rem;
+			max-width: 70rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__sponsors {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+			grid-gap: 2rem;
+			max-width: 80rem;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
