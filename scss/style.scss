@@ -74,6 +74,7 @@ body {
 	font-size: 18px;
 	background: url(../images/bg-header-mobile.png) top/cover no-repeat;
 	font-weight: $ff-bodyWeight;
+	font-family: $ff-title;
 }
 
 // header style
@@ -203,8 +204,7 @@ body {
 	margin-bottom: 1.5rem;
 }
 .footer {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding: 2rem;
 	background: $primary-lightBlue;
 	text-align: center;
 	&__wrap {

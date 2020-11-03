@@ -62,6 +62,7 @@ body {
   font-size: 18px;
   background: url(../images/bg-header-mobile.png) top/cover no-repeat;
   font-weight: 400;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 .header {
@@ -220,8 +221,7 @@ body {
 }
 
 .footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   background: #a7b3b9;
   text-align: center;
 }
