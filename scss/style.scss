@@ -205,7 +205,7 @@ body {
 }
 .footer {
 	padding: 2rem;
-	background: $primary-lightBlue;
+	background: lighten(gray, 40%);
 	text-align: center;
 	&__wrap {
 		&__logo {
